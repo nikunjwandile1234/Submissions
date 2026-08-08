@@ -6,13 +6,14 @@ void main()
     int price;
     int discount;
     int total;
-   
-    printf("Are you Student? y for yes ");
-    scanf("%c",&Student);
     printf("Enter the price:");
     scanf("%d",&price);
+    fflush(stdin);
+    printf("Are you Student? y for yes, n for no ");
+    scanf("%c",&Student);
+    
 
-    if(Student=='y')
+    if(Student=='y' || Student =="Y")
     {
         if(price>500)
         {
@@ -23,7 +24,7 @@ void main()
             discount=price*0.10;
         }
     }
-    else
+    else if(Student=='n'|| Student =='N')
     {
         if(price>600)
         {
@@ -32,6 +33,10 @@ void main()
         else{
             discount=0;
         }
+    }
+    else
+    {
+        Printf("Enter the Valid Identity");
     }
     
     total=price-discount;
