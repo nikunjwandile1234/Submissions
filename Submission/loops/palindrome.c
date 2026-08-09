@@ -9,7 +9,7 @@ void main()
     while(no>0)
     {
         int last_digit=no%10;
-        reverse=reverse+last_digit*10;
+        reverse=reverse*10+last_digit;
         no=no/10;
 
     }
