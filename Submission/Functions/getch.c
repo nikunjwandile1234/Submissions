@@ -7,7 +7,7 @@ int main()
 
     ch = getch();
 
-    printf("%d", ch);
+    printf("%d",ch);
 
     return 0;
 }
